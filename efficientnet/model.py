@@ -418,7 +418,7 @@ def EfficientNet(width_coefficient,
         inputs = img_input
 
     # Create model.
-    model = models.Model(inputs, x, name=model_name)
+    model = models.Model(inputs, x)
 
     # Load weights.
     if weights == 'imagenet':
